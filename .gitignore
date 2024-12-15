@@ -1,3 +1,21 @@
-__pycache__
+# Ignore Python bytecode files
 __pycache__/
-env
+*.pyc
+
+# Ignore the virtual environment directory
+env/
+
+# Ignore all migration files except __init__.py
+*/migrations/*.py
+*/migrations/*.pyc
+*/migrations/__pycache__/*
+
+# Ignore media files except the post_images directory
+media/*
+!media/post_images/
+media/
+
+media/*
+**/migrations/
+*/migrations/*
+!*/migrations/__init__.py
